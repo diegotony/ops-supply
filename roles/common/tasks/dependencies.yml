@@ -1,0 +1,24 @@
+- name: Install common packages
+  apt:
+    update_cache: yes
+    name: "{{item}}"
+    state: present
+  become_user: root
+  with_items:
+    - bison
+    - xclip
+    - wget
+    - tmux
+    - git
+    - vim
+    - neofetch
+    - zsh
+    - grep
+    - htop
+    - glances
+    - screen
+    - virtualenv
+    - vlc
+    - tilix
+  register: dependencies
+  
