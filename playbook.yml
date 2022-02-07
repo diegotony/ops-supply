@@ -1,7 +1,7 @@
 - hosts: localhost
   connection: local
-  gather_facts: no
-  become: true
+  gather_facts: yes
+  become: yes
   roles:
-    - common
-    - docker
+    # - common
+    - hashicorp

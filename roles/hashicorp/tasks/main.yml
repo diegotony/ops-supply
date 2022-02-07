@@ -1,0 +1,3 @@
+# - include: dependencies.yml
+- include: repository.yml
+- include: config.yml

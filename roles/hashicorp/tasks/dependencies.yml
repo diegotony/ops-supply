@@ -1,0 +1,12 @@
+- name: Install docker packages
+  apt:
+    update_cache: yes
+    name: "{{item}}"
+    state: present
+    
+  with_items:
+    - gnupg
+    - software-properties-common
+    - curl
+  register: dependencies
+  
