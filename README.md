@@ -1,4 +1,4 @@
-# ops-supply
+# OpsSupply
 Ops Tools for operations and devops
 
 # Description 
