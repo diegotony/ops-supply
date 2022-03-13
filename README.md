@@ -4,19 +4,28 @@ Ops Tools for operations and devops
 # Description 
 Script created with Ansible
 
+# Dependencies
+- Python3.9
+- Git
+
 ## TODO
 - Common ✔️
-- Docker
+- Docker ✔️
 - Hashicorp Packages ✔️
 - Terraform plugins (terraformer and terragrunt)
-- Go
-- Go Dependencies
-- Python version manager
-- Amazon CLI and SAM
+- Golang
+- Python packages (Amazon CLI and SAM) ✔️
 - ohMyZSH
 
 
 # Run
 ```bash
 ansible-playbook playbook.yml
+```
+
+
+# Nope
+OhMyZsh
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
