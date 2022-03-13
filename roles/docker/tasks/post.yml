@@ -1,0 +1,11 @@
+- name: Ensure group docker exists
+  ansible.builtin.group:
+    name: docker
+    state: present
+
+- name: Adding existing user kakashi to group sudo
+  user:
+    name: kakashi
+    groups: docker
+    append: yes
+  # become: yes

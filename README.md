@@ -14,3 +14,9 @@ Script created with Ansible
 - Python version manager
 - Amazon CLI and SAM
 - ohMyZSH
+
+
+# Run
+```bash
+ansible-playbook playbook.yml
+```

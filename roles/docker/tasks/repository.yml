@@ -1,0 +1,24 @@
+- name: import the docker apt key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+  become: true
+
+- name: Add docker repository into sources list
+  ansible.builtin.apt_repository:
+    repo: "deb [arch=amd64] https://download.docker.com/linux/debian {{ansible_distribution_release}} stable"
+    state: present
+    filename: docker
+
+- name: Install Docker Packages
+  apt:
+    update_cache: yes
+    name: "{{item}}"
+    state: present
+  become_user: root
+  with_items:
+    - docker-ce 
+    - docker-ce-cli
+    - containerd.io
+  register: packages
+  
