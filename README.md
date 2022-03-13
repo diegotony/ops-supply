@@ -15,8 +15,6 @@ Script created with Ansible
 - Terraform plugins (terraformer and terragrunt)
 - Golang
 - Python packages (Amazon CLI and SAM) ✔️
-- ohMyZSH
-
 
 # Run
 ```bash
