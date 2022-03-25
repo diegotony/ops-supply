@@ -5,6 +5,7 @@
   roles:
     - common
     - hashicorp
+    # - homebrew
     # - docker
     - python
 

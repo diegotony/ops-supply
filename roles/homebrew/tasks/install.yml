@@ -1,0 +1,22 @@
+- name: Git Brew
+  become_user: diegotony
+  become: no
+  ansible.builtin.git:
+    repo: https://github.com/Homebrew/brew
+    dest: /home/diegotony/homebrew
+ 
+- name: "Add Brew in PATH"
+  become_user: diegotony
+  become: no
+  lineinfile:
+    path: /home/diegotony/.zshrc
+    line: "export PATH=/home/diegotony/homebrew/bin:$PATH"
+    state: present
+
+ 
+- name: Add Homebrew to Path
+  become: no
+  ansible.builtin.shell: |
+    source /home/diegotony/.zshrc
+  args:
+     executable: /bin/bash

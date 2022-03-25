@@ -1,0 +1,17 @@
+- name: Install common packages
+  apt:
+    update_cache: yes
+    name: "{{item}}"
+    state: present
+  become_user: root
+  with_items:
+    - curl
+    - wget
+    - ruby
+    - build-essential
+    - procps
+    - file
+    - git
+
+  register: dependencies
+  
