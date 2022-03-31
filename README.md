@@ -1,20 +1,54 @@
 # OpsSupply
+
 Ops Tools for operations and devops
 
-# Description 
+## Description 
+
 Script created with Ansible
 
-# Dependencies
+## Dependencies
+
 - Python3.9
 - Git
 
 ## TODO
-- Common ✔️
+
+- Common
+  - bison ✔️
+  - xclip ✔️
+  - wget ✔️
+  - tmux ✔️
+  - git ✔️
+  - vim ✔️
+  - neofetch ✔️
+  - zsh ✔️
+  - grep ✔️
+  - htop ✔️
+  - glances ✔️
+  - screen ✔️
+  - virtualenv ✔️
+  - vlc ✔️
+  - tilix ✔️
+
 - Docker ✔️
-- Hashicorp Packages ✔️
-- Terraform plugins (terraformer and terragrunt)
-- Golang
-- Python packages (Amazon CLI and SAM) ✔️
+
+- Hashicorp Packages
+  - Terraform ✔️
+  - vagrant ✔️
+  - packer ✔️
+
+- Terraform plugins
+  - Terragrunt ✔️
+  - Terraformer
+  - tfscan
+
+- Version Manager
+  - pvm
+  - gvm
+  - nvm
+- Python packages
+  - awscli ✔️
+  - sam ✔️
 
 # Run
 ```bash
